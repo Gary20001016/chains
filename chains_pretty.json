@@ -6727,8 +6727,8 @@
 }, {
   "name": "Rollux Mainnet",
   "chain": "SYS",
-  "rpc": ["https://rpc.rollux.com", "wss://rpc.rollux.com/wss", "https://rpc.ankr.com/rollux", "https://rollux.rpc.syscoin.org", "wss://rollux.rpc.syscoin.org/wss"],
-  "faucets": ["https://rollux.id/faucetapp"],
+  "rpc": ["https://rpc.rollux.com", "wss://rpc.rollux.com/wss", "https://rpc.ankr.com/rollux"],
+  "faucets": ["https://rollux.id/faucet"],
   "nativeCurrency": {
     "name": "Syscoin",
     "symbol": "SYS",
@@ -6739,7 +6739,7 @@
   "chainId": 570,
   "networkId": 570,
   "explorers": [{
-    "name": "Rollux Explorer",
+    "name": "Rollux Mainnet Explorer",
     "url": "https://explorer.rollux.com",
     "standard": "EIP3091"
   }]
@@ -36315,6 +36315,42 @@
     "chain": "eip155-1",
     "bridges": [{
       "url": "https://portal.treasure.lol/bridge"
+    }]
+  }
+}, {
+  "name": "Treasure Topaz",
+  "chain": "Treasure Topaz",
+  "shortName": "Topaz",
+  "chainId": 978658,
+  "networkId": 978658,
+  "nativeCurrency": {
+    "name": "Testnet MAGIC",
+    "symbol": "MAGIC",
+    "decimals": 18
+  },
+  "slip44": 1,
+  "features": [{
+    "name": "EIP155"
+  }, {
+    "name": "EIP1559"
+  }],
+  "infoURL": "https://app.treasure.lol",
+  "icon": "treasuretopaz",
+  "rpc": ["https://rpc.topaz.treasure.lol", "wss://rpc.topaz.treasure.lol/ws"],
+  "faucets": ["https://app.treasure.lol/chain/faucet", "https://thirdweb.com/treasure-topaz"],
+  "explorers": [{
+    "name": "treasurescan",
+    "url": "https://topaz.treasurescan.io",
+    "icon": "treasure",
+    "standard": "EIP3091"
+  }],
+  "parent": {
+    "type": "L2",
+    "chain": "eip155-1",
+    "bridges": [{
+      "url": "https://app.treasure.lol/chain/bridge"
+    }, {
+      "url": "https://portal.topaz.treasure.lol/bridge"
     }]
   }
 }, {
